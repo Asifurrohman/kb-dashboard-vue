@@ -9,11 +9,14 @@ export default {
         'soft-green': '#2dce89',
         'hz-blue': '#56a2d6',
         'soft-blue': '#4384F6',
-        'light-grey': '#E5E7EB',
+        'dark-blue': '#1D54B4',
+        'light-grey': '#ECF0F6',
         'dark-grey': '#5C5F6C'
       },
       fontFamily: {
-        inter: ['Inter']
+        inter: ['Inter', 'sans-serif'],
+        opensans: ['Open Sans', 'sans-serif']
+
       },
     },
   },
