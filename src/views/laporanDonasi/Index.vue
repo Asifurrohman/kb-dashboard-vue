@@ -39,12 +39,57 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <tr class="broder-b h-10">
+                        <td class="py-2 px-3 border-r">
+                            <img src="../../../public/img/sakamoto.jpg" class="h-20 w-full rounded-lg object-cover">
+                            <div class="flex flex-col">
+                                <span class="text-lg font-semibold">Sakamoto</span>
+                                <span class="text-base text-gray-600">SMP N 3 Godean</span>
+                            </div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-emerald-500"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-emerald-500"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-emerald-500"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-emerald-500"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-emerald-500"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-slate-300"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-slate-300"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-slate-300"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-slate-300"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-slate-300"></div>
+                        </td>
+                        <td class="py-2 px-3 border-r">
+                            <div class="w-10 h-10 bg-slate-300"></div>
+                        </td>
+                        <td class="py-2 px-3">
+                            <div class="w-10 h-10 bg-slate-300"></div>
+                        </td>
+                    </tr>
                     <tr>
                         <td class="py-2 px-3 border-r">
                             <img src="../../../public/img/sakamoto.jpg" class="h-20 w-full rounded-lg object-cover">
                             <div class="flex flex-col">
                                 <span class="text-lg font-semibold">Sakamoto</span>
-                                <span class="text-base text-gray-600">SD N Kamchatka 1</span>
+                                <span class="text-base text-gray-600">SMP N 3 Godean</span>
                             </div>
                         </td>
                         <td class="py-2 px-3 border-r">

@@ -49,13 +49,13 @@
                     </li>
                     <li class="my-2">
                         <RouterLink to="/konfirmasi-donasi" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
-                            <span class="w-5 h-5"><ion-icon name="person-add-outline"></ion-icon></span>
+                            <span class="w-5 h-5"><ion-icon name="stats-chart-outline"></ion-icon></span>
                             <span class="ms-3">Konfirmasi Donasi</span>
                         </RouterLink>
                     </li>
                     <li class="my-2">
                         <RouterLink to="/laporan-donasi" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
-                            <span class="w-5 h-5"><ion-icon name="person-add-outline"></ion-icon></span>
+                            <span class="w-5 h-5"><ion-icon name="bookmarks-outline"></ion-icon></span>
                             <span class="ms-3">Laporan Donasi</span>
                         </RouterLink>
                     </li>
