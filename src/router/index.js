@@ -1,14 +1,23 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BerandaView from '../views/beranda/BerandaView.vue'
-import AdikBintangSayaView from '../views/adikbintang/AdikBintangSayaView.vue'
-import TambahAdikBintangView from '@/views/adikbintang/TambahAdikBintangView.vue'
-import DipilihAdikBintangView from '@/views/adikbintang/DipilihAdikBintangView.vue'
-import RekomendasiAdikBintangView from '../views/adikbintang/RekomendasiAdikBintangView.vue'
+import AdikBintangSayaView from '../views/adikbintang/Index.vue'
+import TambahAdikBintangView from '@/views/tambahAdikbintang/Index.vue'
+import DipilihAdikBintangView from '@/views/tambahAdikbintang/DipilihAdikBintangView.vue'
+import RekomendasiAdikBintangView from '../views/tambahAdikbintang/RekomendasiAdikBintangView.vue'
 import ProfileAdikBintangView from '../views/adikbintang/detail/ProfileAdikBintangView.vue'
 import CatatanInterviewView from '../views/adikbintang/detail/CatatanInterviewView.vue'
 import CatatanHomeVisitView from '../views/adikbintang/detail/CatatanHomeVisitView.vue'
 import ProgressReportView from '../views/adikbintang/detail/ProgressReportView.vue'
+
+import TambahProfileAdikBintangView from '../views/tambahAdikbintang/profileAb/ProfileAdikBintangView.vue'
+import TambahCatatanInterviewView from '../views/tambahAdikbintang/profileAb/CatatanInterviewView.vue'
+import TambahCatatanHomeVisitView from '../views/tambahAdikbintang/profileAb/CatatanHomeVisitView.vue'
+import TambahProgressReportView from '../views/tambahAdikbintang/profileAb/ProgressReportView.vue'
+
+import DonationMeterView from '../views/laporanDonasi/Index.vue'
+import RingkasanDonasiView from '../views/laporanDonasi/RingkasanDonasiView.vue'
+import KonfirmasiDonasiView from '../views/laporanDonasi/KonfirmasiDonasiView.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -24,39 +33,74 @@ const router = createRouter({
       component: AdikBintangSayaView
     },
     {
+      path: '/adik-bintang-saya/profile-ab',
+      name: 'profile adik bintang',
+      component: ProfileAdikBintangView
+    },
+    {
+      path: '/adik-bintang-saya/profile-ab/catatan-interview-ab',
+      name: 'catatan interview adik bintang',
+      component: CatatanInterviewView
+    },
+    {
+      path: '/adik-bintang-saya/profile-ab/catatan-homevisit-ab',
+      name: 'catatan home visit adik bintang',
+      component: CatatanHomeVisitView
+    },
+    {
+      path: '/adik-bintang-saya/profile-ab/progress-report-ab',
+      name: 'progress report adik bintang',
+      component: ProgressReportView
+    },
+    {
       path: '/tambah-adik-bintang',
       name: 'tambah adik bintang',
       component: TambahAdikBintangView
     },
     {
-      path: '/dipilih-adik-bintang',
+      path: '/tambah-adik-bintang/dipilih-adik-bintang',
       name: 'dipilih adik bintang',
       component: DipilihAdikBintangView
     },
     {
-      path: '/rekomendasi-adik-bintang',
+      path: '/tambah-adik-bintang/rekomendasi-adik-bintang',
       name: 'rekomendasi adik bintang',
       component: RekomendasiAdikBintangView
     },
     {
-      path: '/detail/profile-ab',
+      path: '/tambah-adik-bintang/profile-ab/',
       name: 'profile adik bintang',
-      component: ProfileAdikBintangView
+      component: TambahProfileAdikBintangView
     },
     {
-      path: '/detail/catatan-interview-ab',
+      path: '/tambah-adik-bintang/profile-ab/catatan-interview-ab',
       name: 'catatan interview adik bintang',
-      component: CatatanInterviewView
+      component: TambahCatatanInterviewView
     },
     {
-      path: '/detail/catatan-homevisit-ab',
+      path: '/tambah-adik-bintang/profile-ab/catatan-homevisit-ab',
       name: 'catatan home visit adik bintang',
-      component: CatatanHomeVisitView
+      component: TambahCatatanHomeVisitView
     },
     {
-      path: '/detail/progress-report-ab',
+      path: '/tambah-adik-bintang/profile-ab/progress-report-ab',
       name: 'progress report adik bintang',
-      component: ProgressReportView
+      component: TambahProgressReportView
+    },
+    {
+      path: '/laporan-donasi',
+      name: 'donation meter',
+      component: DonationMeterView
+    },
+    {
+      path: '/laporan-donasi/ringkasan-donasi',
+      name: 'ringkasan donasi',
+      component: RingkasanDonasiView
+    },
+    {
+      path: '/laporan-donasi/konfirmasi-donasi',
+      name: 'konfirmasi donasi',
+      component: KonfirmasiDonasiView
     },
   ],
 })
