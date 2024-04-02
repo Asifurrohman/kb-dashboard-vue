@@ -2,17 +2,17 @@
     <div class="bg-white w-full rounded pb-5">
         <div class="bg-gray-300 w-full flex justify-center rounded-t">
             <div class="w-40 -mb-12 pt-5">
-                <img src="../../../../public/img/sakamoto.jpg" alt="" class="h-40 w-full object-cover rounded-full border-soft-blue border-8">
+                <img src="../../../../public/img/klee.jpg" alt="" class="h-40 w-full object-cover rounded-full border-soft-blue border-8">
             </div>
         </div>
         
         <div class="text-center mt-20">
-            <h2 class="font-bold text-3xl">Sakamoto</h2>
+            <h2 class="font-bold text-3xl">Klee</h2>
             <span class="text-xl">15 Tahun</span>
         </div>
         
         <!-- Menu pada profile adik bintang -->
-        <AdikBintagProfileMenu />
+        <TambahAdikBintagProfileMenu />
         
         <h3 class="text-lg text-soft-blue font-semibold text-center mt-10">Progress Report</h3>
         <hr class="w-full my-1 bg-gray-200">
@@ -31,7 +31,7 @@
 </template>
 
 <script setup>
-import AdikBintagProfileMenu from '../../../components/AdikBintangProfileMenu.vue'
+import TambahAdikBintagProfileMenu from '../../../components/TambahAdikBintangProfileMenu.vue'
 </script>
 
 <style lang="scss" scoped>

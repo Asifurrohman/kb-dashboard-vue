@@ -3,17 +3,7 @@
         <h1 class="text-3xl font-semibold">Tambah Adik Bintang</h1>
         <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
         
-        <div class="bg-white py-2 px-5 mb-5 rounded-lg text-sm flex">
-            <RouterLink to="/tambah-adik-bintang" activeClass="bg-soft-blue hover:bg-blue-600 text-white hover:text-white py-2 px-5 rounded mr-2" class="hover:text-blue-600 py-2 px-5 rounded mr-2">
-                Tersedia
-            </RouterLink>
-            <RouterLink to="/dipilih-adik-bintang" activeClass="bg-soft-blue hover:bg-blue-600 text-white hover:text-white py-2 px-5 rounded mr-2" class="hover:text-blue-600 py-2 px-5 rounded mr-2">
-                Dipilih
-            </RouterLink>
-            <RouterLink to="/rekomendasi-adik-bintang" activeClass="bg-soft-blue hover:bg-blue-600 text-white hover:text-white py-2 px-5 rounded mr-2" class="hover:text-blue-600 py-2 px-5 rounded mr-2">
-                Rekomendasi
-            </RouterLink>
-        </div>
+        <TambahAdikBintangMenu />
         
         <div class="bg-yellow-300 p-5 rounded mb-5">
             <p>Belum ada Adik Bintang yang ditambahkan</p>
@@ -34,10 +24,8 @@
     </div>
 </template>
 
-<script>
-export default {
-    
-}
+<script setup>
+import TambahAdikBintangMenu from '../../components/TambahAdikBintangMenu.vue'
 </script>
 
 <style lang="scss" scoped>

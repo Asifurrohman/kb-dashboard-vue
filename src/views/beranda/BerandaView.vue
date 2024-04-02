@@ -14,7 +14,7 @@
         <div class="w-full sm:w-1/2 text-white sm:ml-5 text-center sm:text-left mt-5 sm:mt-0">
             <h2 class="text-2xl sm:text-3xl font-inter font-bold mb-3">Sering Lupa Kirim Donasi?</h2>
             <p>
-                Tahukah kakak bahwa Hoshizora Foundation menerima donasi dengan metode autodebet dari berbagai jenis bank?
+                Tahukah kakak bahwa Hoshizora Foundation menerima donasi dengan <span class="font-bold">metode autodebet</span> dari berbagai jenis bank?
             </p>
         </div>
     </div>
