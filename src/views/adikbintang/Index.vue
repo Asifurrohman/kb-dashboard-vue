@@ -3,7 +3,7 @@
     <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
     <div class="bg-white p-5 mb-5 rounded-lg">
         <p class="mb-3">Kakak bisa klik tombol di bawah ini jika ingin menambah adik bintang</p>
-        <RouterLink to="/TambahAdikBintang/tambah-adik-bintang" class="bg-soft-green hover:bg-emerald-500 text-white py-2 px-5 rounded">
+        <RouterLink to="/tambah-adik-bintang" class="bg-soft-green hover:bg-emerald-500 text-white py-2 px-5 rounded">
             <span><ion-icon name="add-outline" class="text-white"></ion-icon></span>
             <span class="text-sm">Tambah Adik Bintang</span>
         </RouterLink>

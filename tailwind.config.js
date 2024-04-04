@@ -7,6 +7,7 @@ export default {
     extend: {
       colors: {
         'soft-green': '#2dce89',
+        'soft-yellow': '#faca12',
         'hz-blue': '#56a2d6',
         'soft-blue': '#4384F6',
         'dark-blue': '#1D54B4',

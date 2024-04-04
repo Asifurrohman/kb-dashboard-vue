@@ -64,7 +64,7 @@
                     </RouterLink>
                 </li>
                 <li class="my-2">
-                    <RouterLink to="/program-donasi" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
+                    <RouterLink to="/one-time-donation" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
                         <span class="w-5 h-5"><ion-icon name="heart-half-outline"></ion-icon></span>
                         <span class="ms-3">One Time Donation</span>
                     </RouterLink>
@@ -88,7 +88,7 @@
                     </RouterLink>
                 </li>
                 <li class="my-2">
-                    <RouterLink to="/konfirmasi-donasi" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
+                    <RouterLink to="/konfirmasi-transfer-donasi" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
                         <span class="w-5 h-5"><ion-icon name="stats-chart-outline"></ion-icon></span>
                         <span class="ms-3">Konfirmasi Donasi</span>
                     </RouterLink>

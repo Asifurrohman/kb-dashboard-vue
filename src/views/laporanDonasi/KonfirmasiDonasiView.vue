@@ -6,13 +6,17 @@
         <div class="w-full">
 
             <div class="border border-gray-300 rounded-lg">
-                <div class="bg-slate-200 border-b-2 border-gray-200 px-5 py-2 rounded-t-lg flex justify-between items-center">
+                <div class="bg-slate-50 border-b-2 border-gray-200 px-5 py-2 rounded-t-lg flex justify-between items-center">
                     <span class="bg-soft-green text-white text py-2 px-3 rounded-full">Donasi berhasil masuk</span>
                     <span class="text-sm text-gray-600">25 Maret 2024</span>
                 </div>
                 <div class="bg-white p-5 rounded-b-lg flex flex-col">
                     <span class="text-3xl font-bold font-opensans mb-2">Rp300.000</span>
-                    <span class="text-sm text-gray-600">Donasi untuk Program Adik Bintang</span>
+                    <div class="mt-2">
+                        <span class=" text-gray-600 bg-slate-200 p-2 rounded">
+                            Donasi untuk <span class="font-semibold">Program Adik Bintang</span>
+                        </span>
+                    </div>
                 </div>
             </div>
 

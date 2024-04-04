@@ -1,6 +1,9 @@
 import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BerandaView from '../views/beranda/BerandaView.vue'
+
+import OneTimeDonationView from '../views/oneTimeDonation/Index.vue'
+
 import AdikBintangSayaView from '../views/adikbintang/Index.vue'
 import TambahAdikBintangView from '@/views/tambahAdikbintang/Index.vue'
 import DipilihAdikBintangView from '@/views/tambahAdikbintang/DipilihAdikBintangView.vue'
@@ -15,6 +18,8 @@ import TambahCatatanInterviewView from '../views/tambahAdikbintang/profileAb/Cat
 import TambahCatatanHomeVisitView from '../views/tambahAdikbintang/profileAb/CatatanHomeVisitView.vue'
 import TambahProgressReportView from '../views/tambahAdikbintang/profileAb/ProgressReportView.vue'
 
+import KonfirmasiTransferDonasiView from '../views/konfirmasiDonasi/Index.vue'
+
 import DonationMeterView from '../views/laporanDonasi/Index.vue'
 import RingkasanDonasiView from '../views/laporanDonasi/RingkasanDonasiView.vue'
 import KonfirmasiDonasiView from '../views/laporanDonasi/KonfirmasiDonasiView.vue'
@@ -26,6 +31,11 @@ const router = createRouter({
       path: '/',
       name: 'beranda',
       component: BerandaView
+    },
+    {
+      path: '/one-time-donation',
+      name: 'one time donation',
+      component: OneTimeDonationView
     },
     {
       path: '/adik-bintang-saya',
@@ -101,6 +111,11 @@ const router = createRouter({
       path: '/laporan-donasi/konfirmasi-donasi',
       name: 'konfirmasi donasi',
       component: KonfirmasiDonasiView
+    },
+    {
+      path: '/konfirmasi-transfer-donasi',
+      name: 'konfirmasi transfer donasi',
+      component: KonfirmasiTransferDonasiView
     },
   ],
 })
