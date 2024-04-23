@@ -74,7 +74,7 @@
                         </tbody>
                     </table>
                 </div>
-
+                
                 <h3 class="text-lg text-soft-blue font-semibold text-center">Alamat dan Lokasi</h3>
                 <hr class="w-full my-2 bg-gray-200">
                 <div class="w-full overflow-x-auto bg-white mb-10">
@@ -99,6 +99,68 @@
                             <tr class="border-b">
                                 <td class="p-3 text-gray-700 font-semibold w-1/3">Negara Saat Ini</td>
                                 <td class="p-3 text-gray-700 w-2/3">Italia</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 class="text-lg text-soft-blue font-semibold text-center">Informasi Donasi</h3>
+                <hr class="w-full my-2 bg-gray-200">
+                <div class="w-full overflow-x-auto bg-white mb-10">
+                    <table class="w-full table table-fixed overflow-auto lg:overflow-hidden">
+                        <tbody class="">
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold w-1/3">Interval Donasi</td>
+                                <td class="p-3 text-gray-700 w-2/3">Per 1 bulan</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold w-1/3">Rekening Favorit</td>
+                                <td class="p-3 text-gray-700 w-2/3">-</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold w-1/3">Mata Uang</td>
+                                <td class="p-3 text-gray-700 w-2/3">Rp (Rupiah)</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold w-1/3">Sekali Donasi</td>
+                                <td class="p-3 text-gray-700 w-2/3">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                
+                <h3 class="text-lg text-soft-blue font-semibold text-center">Akun Media Sosial</h3>
+                <hr class="w-full my-2 bg-gray-200">
+                <div class="w-full overflow-x-auto bg-white mb-10">
+                    <table class="w-full table table-fixed overflow-auto lg:overflow-hidden">
+                        <tbody class="">
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold flex flex-row items-center">
+                                    <span class="h-full mr-2"><ion-icon name="logo-facebook"></ion-icon></span>
+                                    <span class="h-full">Facebook</span>
+                                </td>
+                                <td class="p-3 text-gray-700 w-2/3">Michelangelo Donatelo</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold flex flex-row items-center">
+                                    <span class="mr-2"><ion-icon name="logo-linkedin"></ion-icon></span>
+                                    <span>LinkedIn</span>
+                                </td>
+                                <td class="p-3 text-gray-700 w-2/3">Michelangelo Donatelo</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold flex flex-row items-center">
+                                    <span class="mr-2"><ion-icon name="logo-instagram"></ion-icon></span>
+                                    <span>Instagram</span>
+                                </td>
+                                <td class="p-3 text-gray-700 w-2/3">mas.angelo</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="p-3 text-gray-700 font-semibold flex flex-row items-center">
+                                    <span class="mr-2"><ion-icon name="logo-twitter"></ion-icon></span>
+                                    <span>X (Twitter)</span>
+                                </td>
+                                <td class="p-3 text-gray-700">Yoshino Abuser</td>
                             </tr>
                         </tbody>
                     </table>

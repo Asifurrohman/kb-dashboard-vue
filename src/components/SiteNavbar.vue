@@ -21,17 +21,6 @@
                             </a>
                         </div>
                     </button>
-                    <!-- <button id="avatarButton" type="button"  class="flex flex-row items-center relative">
-                        <span class="mr-2.5 hidden md:block text-white lg:text-black">Michelangelo</span>
-                        <div class="w-12 h-12">
-                            <img class="rounded-full max-w-full h-auto align-middle border-none" src="../../public/img/shanon.jpg" alt="user image" />
-                        </div>
-                        <div id="avatarMenu" class="hidden text-center text-base bg-white border border-inherit rounded w-40 absolute top-0 right-0 mt-10 z-30 p-2">
-                            <a href="profil.html">Profil saya</a>
-                            <hr class="my-2">
-                            <a href="#" class="w-full text-red-600 hover:text-red-900">Sign out</a>
-                        </div>
-                    </button> -->
                     <RouterLink to="/profile-kakak-bintang" class="flex flex-row items-center relative">
                         <span class="mr-2.5 hidden md:block text-white lg:text-black">Michelangelo</span>
                         <div class="w-12 h-12">
@@ -89,7 +78,7 @@
                         </RouterLink>
                     </li>
                     <li class="my-2">
-                        <RouterLink to="/adik-bintang-saya" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
+                        <RouterLink to="/tulis-surat" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
                             <span class="w-5 h-5"><ion-icon name="mail-outline"></ion-icon></span>
                             <span class="ms-3">Tulis Surat Bintang</span>
                         </RouterLink>

@@ -27,6 +27,8 @@ import KonfirmasiDonasiView from '../views/laporanDonasi/KonfirmasiDonasiView.vu
 
 import ProfileKakakBintangView from '../views/profileKakakbintang/Index.vue'
 
+import TulisSuratView from '../views/tulisSuratBintang/Index.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -129,6 +131,11 @@ const router = createRouter({
       path: '/profile-kakak-bintang',
       name: 'profile kakak bintang',
       component: ProfileKakakBintangView
+    },
+    {
+      path: '/tulis-surat',
+      name: 'tulis surat bintang',
+      component: TulisSuratView
     },
   ],
 })
