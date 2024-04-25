@@ -24,10 +24,10 @@
                         <td class="p-3 text-sm text-gray-700">15</td>
                         <td class="p-3 text-sm text-gray-700">SMA</td>
                         <td class="p-3 text-sm text-gray-700">
-                            <button class="bg-soft-green hover:bg-emerald-800 px-5 py-2 rounded text-white flex">
+                            <router-link to="/adik-bintang-saya/profile-ab/progress-report-ab" class="w-fit bg-soft-green hover:bg-emerald-800 px-5 py-2 rounded text-white flex">
                                 <span class="mr-2 hidden sm:block"><ion-icon name="pencil"></ion-icon></span>
                                 <span>Tulis</span>
-                            </button>
+                            </router-link>
                         </td>
                     </tr>
                     <tr class="hover:bg-gray-100">
@@ -38,10 +38,10 @@
                         <td class="p-3 text-sm text-gray-700">15</td>
                         <td class="p-3 text-sm text-gray-700">SMA</td>
                         <td class="p-3 text-sm text-gray-700">
-                            <button class="bg-soft-green hover:bg-emerald-800 px-5 py-2 rounded text-white flex">
+                            <router-link to="/adik-bintang-saya/profile-ab/progress-report-ab" class="w-fit bg-soft-green hover:bg-emerald-800 px-5 py-2 rounded text-white flex">
                                 <span class="mr-2 hidden sm:block"><ion-icon name="pencil"></ion-icon></span>
                                 <span>Tulis</span>
-                            </button>
+                            </router-link>
                         </td>
                     </tr>
                     <tr class="hover:bg-gray-100">
@@ -52,10 +52,10 @@
                         <td class="p-3 text-sm text-gray-700">15</td>
                         <td class="p-3 text-sm text-gray-700">SMA</td>
                         <td class="p-3 text-sm text-gray-700">
-                            <button class="bg-soft-green hover:bg-emerald-800 px-5 py-2 rounded text-white flex">
+                            <router-link to="/adik-bintang-saya/profile-ab/progress-report-ab" class="w-fit bg-soft-green hover:bg-emerald-800 px-5 py-2 rounded text-white flex">
                                 <span class="mr-2 hidden sm:block"><ion-icon name="pencil"></ion-icon></span>
                                 <span>Tulis</span>
-                            </button>
+                            </router-link>
                         </td>
                     </tr>
                 </tbody>
