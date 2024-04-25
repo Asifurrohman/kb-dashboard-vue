@@ -26,6 +26,8 @@ import RingkasanDonasiView from '../views/laporanDonasi/RingkasanDonasiView.vue'
 import KonfirmasiDonasiView from '../views/laporanDonasi/KonfirmasiDonasiView.vue'
 
 import ProfileKakakBintangView from '../views/profileKakakbintang/Index.vue'
+import UpdateProfileKakakBintangView from '../views/profileKakakbintang/settings/UpdateProfileKakakBintangView.vue'
+import UbahPasswordKakakBintangView from '../views/profileKakakbintang/settings/UbahPasswordKakakBintangView.vue'
 
 import TulisSuratView from '../views/tulisSuratBintang/Index.vue'
 
@@ -131,6 +133,16 @@ const router = createRouter({
       path: '/profile-kakak-bintang',
       name: 'profile kakak bintang',
       component: ProfileKakakBintangView
+    },
+    {
+      path: '/profile-kakak-bintang/update-profile',
+      name: 'update profile kakak bintang',
+      component: UpdateProfileKakakBintangView
+    },
+    {
+      path: '/profile-kakak-bintang/ubah-password',
+      name: 'ubah password kakak bintang',
+      component: UbahPasswordKakakBintangView
     },
     {
       path: '/tulis-surat',

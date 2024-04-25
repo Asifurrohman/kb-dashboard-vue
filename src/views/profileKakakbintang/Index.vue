@@ -5,9 +5,11 @@
         <div class="flex w-full">
             <div class="w-2/5">
                 <img src="../../../public/img/shanon.jpg" alt="" class="w-full rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800">
-                <button class="w-full bg-slate-400 hover:bg-slate-500 text-white rounded mt-5 py-2">Ubah Foto</button>
-                <button class="w-full bg-slate-400 hover:bg-slate-500 text-white rounded mt-2 py-2">Edit Profile</button>
-                <button class="w-full bg-rose-600 hover:bg-rose-800 text-white rounded mt-2 py-2">Ubah Password</button>
+                <div class="w-full flex flex-col text-center">
+
+                    <RouterLink to="/profile-kakak-bintang/update-profile" class="w-full bg-slate-400 hover:bg-slate-500 text-white rounded mt-2 py-2">Edit Profile</RouterLink>
+                    <RouterLink to="/profile-kakak-bintang/ubah-password" class="w-full bg-rose-600 hover:bg-rose-800 text-white rounded mt-2 py-2">Ubah Password</RouterLink>
+                </div>
             </div>
             <div class="ml-5 w-3/5">
                 <h3 class="text-lg text-soft-blue font-semibold text-center">Informasi Pribadi</h3>

@@ -53,12 +53,12 @@
                             <span class="ms-3">Beranda</span>
                         </RouterLink>
                     </li>
-                    <li class="my-2">
+                    <!-- <li class="my-2">
                         <RouterLink to="/program-donasi" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
                             <span class="w-5 h-5"><ion-icon name="library"></ion-icon></span>
                             <span class="ms-3">Program Donasi</span>
                         </RouterLink>
-                    </li>
+                    </li> -->
                     <li class="my-2">
                         <RouterLink to="/one-time-donation" class="text-white flex mx-3 p-2 rounded hover:bg-blue-300" activeClass="bg-blue-400">
                             <span class="w-5 h-5"><ion-icon name="heart-half-outline"></ion-icon></span>

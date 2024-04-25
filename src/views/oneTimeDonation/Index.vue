@@ -44,6 +44,9 @@
                         </label>
                     </div>
                 </div>
+                <div class="w-full flex justify-end">
+                    <button class="bg-soft-green text-white px-5 py-2 rounded hover:bg-emerald-600 mt-5">Pilih Metode Pembayaran</button>
+                </div>
             </form>
         </div>
     </div>

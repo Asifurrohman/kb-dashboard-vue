@@ -19,11 +19,40 @@
         
         <div class="p-10">
             <div>
-                <h3 class="text-xl">Periode: <span class="font-semibold">Juli - Desember 2023</span></h3>
-                <div>
-                    <form action="">
-                        <img src="../../../../public/img/contoh-form.png" alt="" class="w-40 object-cover">
-                    </form>
+                <h3 class="text-xl">Periode: <span class="bg-emerald-600 text-white text-base p-2 rounded">Juli - Desember 2023</span></h3>
+                <div class="w-full flex mt-5">
+                    <div class="border-2 border-slate-400 w-1/2 rounded">
+                        <div class="p-2 bg-slate-200 font-semibold">Surat</div>
+                        <div class="px-2 py-4">
+                            <button>
+                                <img src="../../../../public/img/contoh-form.png" alt="" class="w-20 mr-2 object-cover">
+                            </button>
+                        </div>
+                        <div class="bg-slate-200 w-full px-2 py-4">
+                            <form action="">
+                                <input type="text" placeholder="Tulis balasan surat..." class="border-2 rounded p-2 w-full">
+                            </form>
+                        </div>
+                    </div>
+                    <div class="border-2 border-slate-400 w-1/2 rounded">
+                        <div class="p-2 bg-slate-200 font-semibold">Rapor</div>
+                        <div class="px-2 py-4">
+                            <button>
+                                <img src="../../../../public/img/contoh-form.png" alt="" class="w-20 mr-2 object-cover">
+                            </button>
+                            <button>
+                                <img src="../../../../public/img/contoh-form.png" alt="" class="w-20 mr-2 object-cover">
+                            </button>
+                            <button>
+                                <img src="../../../../public/img/contoh-form.png" alt="" class="w-20 mr-2 object-cover">
+                            </button>
+                        </div>
+                        <div class="bg-slate-200 w-full px-2 py-4">
+                            <form action="">
+                                <input type="text" placeholder="Tulis balasan surat..." class="border-2 rounded p-2 w-full">
+                            </form>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
