@@ -2,6 +2,8 @@ import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import BerandaView from '../views/beranda/BerandaView.vue'
 
+import LoginView from '../views/login/LoginView.vue'
+
 import OneTimeDonationView from '../views/oneTimeDonation/Index.vue'
 import CommunityFundView from '../views/communityFund/Index.vue'
 
@@ -31,9 +33,20 @@ import UbahPasswordKakakBintangView from '../views/profileKakakbintang/settings/
 
 import TulisSuratView from '../views/tulisSuratBintang/Index.vue'
 
+import HalamanDepanPesanView from '../views/pesan/Index.vue'
+import DetailPesanView from '../views/pesan/history/DetailPesanView.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
+    {
+      path: '/login',
+      name: 'login',
+      component: LoginView,
+      meta: {
+        hideNavbar: true
+      }
+    },
     {
       path: '/',
       name: 'beranda',
@@ -148,6 +161,16 @@ const router = createRouter({
       path: '/tulis-surat',
       name: 'tulis surat bintang',
       component: TulisSuratView
+    },
+    {
+      path: '/pesan',
+      name: 'halaman depan pesan',
+      component: HalamanDepanPesanView
+    },
+    {
+      path: '/pesan/detail',
+      name: 'halaman detail pesan',
+      component: DetailPesanView
     },
   ],
 })
