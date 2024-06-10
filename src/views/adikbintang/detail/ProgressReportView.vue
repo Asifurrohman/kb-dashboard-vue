@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full lg:w-4/5 absolute right-0 font-inter">
+    <div class="w-full lg:w-4/5 absolute right-0 ">
         <main id="main" class=" mt-20 p-5">
             <div class="bg-white w-full rounded pb-5">
                 <div class="bg-gray-300 w-full flex justify-center rounded-t">

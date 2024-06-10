@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full lg:w-4/5 absolute right-0 font-inter">
+    <div class="w-full lg:w-4/5 absolute right-0 ">
         <main id="main" class=" mt-20 p-5">
             <h1 class="text-3xl font-semibold">Pesan</h1>
             <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">

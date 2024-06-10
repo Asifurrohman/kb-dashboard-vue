@@ -1,14 +1,14 @@
 <template>
-    <div class="w-full lg:w-4/5 absolute right-0 font-inter">
-        <main id="main" class=" mt-20 p-5">
+    <div class="w-full lg:w-4/5 absolute right-0 ">
+        <main id="main" class="mt-24 p-5">
             <div>
                 <h1 class="text-3xl font-semibold">One Time Donation</h1>
                 <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
-                <p class="text-gray-600 text-base mt-2 sm:w-4/5 mb-5 leading-7">
+                <p class="text-gray-600 text-base mt-2 sm:w-4/5 mb-5 leading-7 ">
                     <span class="font-semibold">One Time Donation</span> merupakan salah satu program donasi Hoshizora di mana Anda dapat bergabung kapan saja dan di mana saja dengan memberikan kontribusi finansial berapapun.
                 </p>
                 <p class="text-gray-600 text-base mt-2 sm:w-4/5 mb-10">
-                    Dana dari program ini digunakan untuk program pengembangan dan pengelolaan Adik Bintang serta membantu sebagian Adik Bintang Hoshizora yang memerlukan biaya lebih. Melalui program ini Anda dapat membuat sebuah perubahan yang lebih baik bagi masa depan anak-anak Indonesia.
+                    Dana dari program ini digunakan untuk <span class="font-semibold">program pengembangan dan pengelolaan Adik Bintang</span> serta membantu sebagian Adik Bintang Hoshizora yang memerlukan biaya lebih. Melalui program ini Anda dapat membuat sebuah perubahan yang lebih baik bagi masa depan anak-anak Indonesia.
                 </p>
                 <div class="border rounded bg-white p-10">
                     <h2>Donasi Sekarang</h2>

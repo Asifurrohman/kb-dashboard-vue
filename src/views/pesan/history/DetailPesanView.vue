@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full lg:w-4/5 absolute right-0 font-inter">
+    <div class="w-full lg:w-4/5 absolute right-0 ">
         <main id="main" class=" mt-20 p-5">
             <button class="flex flex-row border border-slate-400 px-4 py-2 rounded hover:bg-white duration-150">
                 <span class="mr-2"><ion-icon name="chevron-back-outline"></ion-icon></span>

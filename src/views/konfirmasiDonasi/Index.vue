@@ -1,5 +1,5 @@
 <template>
-    <div class="w-full lg:w-4/5 absolute right-0 font-inter">
+    <div class="w-full lg:w-4/5 absolute right-0 ">
         <main id="main" class=" mt-20 p-5">
             <div>
                 <h1 class="text-3xl font-semibold">Konfirmasi Transfer Donasi</h1>
