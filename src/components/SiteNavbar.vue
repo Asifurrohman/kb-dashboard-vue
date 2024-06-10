@@ -36,6 +36,7 @@
             </div>
         </nav>
     </header>
+    
     <aside id="sidebar" :class="!menuVisible ? '-translate-x-full lg:translate-x-0' : '' " class="w-2/5 sm:w-3/5 lg:w-1/5 min-h-screen bg-soft-blue fixed top-0 lg:left-0 ease-in-out duration-300 z-20 lg:z-0 shadow-md font-inter">
         <div class="w-full px-5 py-4 flex flex-row justify-between lg:justify-center">
             <a href="#" class=""><img src="../../public/img/logo.svg" alt="" class="h-8"></a>

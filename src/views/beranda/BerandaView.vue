@@ -1,6 +1,6 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 font-inter">
-        <main id="main" class=" mt-20 p-5">
+        <main id="main" class=" mt-28 p-5">
             <div class="container m-auto grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                 <div class="min-w-28 min-h-28 bg-soft-green text-white text-center flex flex-col rounded justify-center">
                     <span>Adik Bintang Aktif</span>
