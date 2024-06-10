@@ -1,0 +1,10 @@
+version: '3'
+services:
+
+  build:
+    container_name: kb
+    image: kb:9
+    build: .
+    tty: true
+    volumes:
+      - ./:/home/www
