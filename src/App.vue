@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full  min-h-screen">
+  <div class="relative w-full  min-h-screen text-dark-grey">
     
     <!-- <SiteNavbar v-if="this.$router.currentRoute.name !== 'login'"/> -->
     <!-- <SiteNavbar v-if="this.$router.currentRoute.name !== 'login'"/> -->

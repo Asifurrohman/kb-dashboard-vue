@@ -36,6 +36,9 @@ import TulisSuratView from '../views/tulisSuratBintang/Index.vue'
 import HalamanDepanPesanView from '../views/pesan/Index.vue'
 import DetailPesanView from '../views/pesan/history/DetailPesanView.vue'
 
+// Revisi
+import MyAdik from '../views/adikbintangView/MyAdik.vue'
+
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
   routes: [
@@ -172,6 +175,13 @@ const router = createRouter({
       name: 'halaman detail pesan',
       component: DetailPesanView
     },
+
+    // Revisi
+    {
+      path: '/my-adik',
+      name: 'Adik Bintang Saya',
+      component: MyAdik
+    }
   ],
 })
 

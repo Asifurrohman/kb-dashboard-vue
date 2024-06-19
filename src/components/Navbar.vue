@@ -39,6 +39,13 @@
                         <span>Adik Bintang Saya</span>
                     </li>
                 </RouterLink>
+
+                <RouterLink to="/my-adik">
+                    <li class="text-white bg-transparent px-4 py-2 rounded hover:bg-dark-blue-2 duration-75 my-4 w-full flex gap-4">
+                        <span class="w-5"><i class="fa-solid fa-child-reaching"></i></span>
+                        <span>Adik Bintang Saya (Revisi)</span>
+                    </li>
+                </RouterLink>
                 
                 <RouterLink :to="{ name: 'tulis surat bintang' }">
                     <li class="text-white bg-transparent px-4 py-2 rounded hover:bg-dark-blue-2 duration-75 my-4 w-full flex gap-4">
@@ -87,17 +94,28 @@
                 <img src="../../public/img/logo-hz-blue.svg" alt="" class="h-10 lg:hidden">
             </RouterLink> -->
             <div class="flex flex-row items-center">
-                <div class="mr-10">
-                    <button class="text-sm bg-slate-200 hover:bg-slate-300 duration-150 px-4 py-2 flex items-center">
+                <div class="mr-10 relative">
+                    <button @click="toggleLanguageBar(false)" class="text-sm bg-slate-200 hover:bg-slate-300 duration-150 px-4 py-2 flex items-center">
                         <span class="mr-1 hidden lg:block">Language: </span>
                         <div class="flex items-center">
-                            <span class="font-semibold mr-1 hidden md:block">{{ language[0].name }}</span>
-                            <img v-bind:src="language[0].iconFlag" width="30" v-bind:alt="language[0].name">
+                            <span class="font-semibold mr-1 hidden md:block">{{ languages[0].name }}</span>
+                            <img v-bind:src="languages[0].iconFlag" width="30" v-bind:alt="languages[0].name">
                         </div>
                         <div class="ml-2">
                             <i class="fa-solid fa-angle-down"></i>
                         </div>
                     </button>
+
+                    <div v-if="showLanguageBar" class="absolute mt-1 w-full">
+                        <ul class="w-full">
+                            <li v-for="lang in languages" v-bind:key="lang" class="w-full">
+                                <a href="#" class="w-full px-4 py-2 bg-hz-blue hover:bg-dark-blue-1 text-hz-white duration-150 flex gap-2">
+                                    <img v-bind:src="lang.iconFlag" width="30" alt="">
+                                    <span class="hidden md:block">{{ lang.name }}</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
                 <img src="../../public/img/acipu.jpeg" class="h-12 w-12 object-cover rounded-full" alt="">
             </div>
@@ -152,7 +170,8 @@ export default {
     data() {
         return {
             showMenu: false,
-            language: [
+            showLanguageBar: false,
+            languages: [
                 {name: 'Bahasa Indonesia', iconFlag: 'https://flagcdn.com/id.svg'},
                 {name: 'English', iconFlag: 'https://flagcdn.com/gb-eng.svg'}
             ]
@@ -162,6 +181,9 @@ export default {
     methods: {
         toggleSidebar(value) {
             this.showMenu = value
+        },
+        toggleLanguageBar() {
+            this.showLanguageBar = !this.showLanguageBar
         }
     },
     
