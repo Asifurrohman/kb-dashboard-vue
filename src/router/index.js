@@ -38,6 +38,7 @@ import DetailPesanView from '../views/pesan/history/DetailPesanView.vue'
 
 // Revisi
 import MyAdik from '../views/adikbintangView/MyAdik.vue'
+import MyAdikActive from '../views/adikbintangView/submenu/MyAdikActive.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -180,7 +181,13 @@ const router = createRouter({
     {
       path: '/my-adik',
       name: 'Adik Bintang Saya',
-      component: MyAdik
+      component: MyAdik,
+      children: [
+        {
+          path: 'active',
+          component: MyAdikActive
+        }
+      ]
     }
   ],
 })

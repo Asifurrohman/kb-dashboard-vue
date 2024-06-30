@@ -159,6 +159,12 @@
 import AdikBintagProfileMenu from '../../../components/AdikBintangProfileMenu.vue'
 </script>
 
+<script>
+  export default {
+    name: 'NestedPages'
+  }
+</script>
+
 <style lang="scss" scoped>
 
 </style>
