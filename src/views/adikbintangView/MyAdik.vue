@@ -37,8 +37,8 @@
 <script setup>
     import CardAdikBintang from '../../components/CardAdikBintang.vue'
 </script>
-<script>
 
+<script>
 export default {
 }
 </script>

@@ -26,24 +26,17 @@
                     </li>
                 </RouterLink>
                 
-                <RouterLink :to="{ name: 'community fund' }">
+                <RouterLink to="/community-fund/description">
                     <li class="text-white bg-transparent px-4 py-2 rounded hover:bg-dark-blue-2 duration-75 my-4 w-full flex gap-4">
                         <span class="w-5"><i class="fa-solid fa-hand-holding-heart"></i></span>
                         <span>Community Fund</span>
-                    </li>
-                </RouterLink>
-                
-                <RouterLink :to="{ name: 'adik bintang saya' }">
-                    <li class="text-white bg-transparent px-4 py-2 rounded hover:bg-dark-blue-2 duration-75 my-4 w-full flex gap-4">
-                        <span class="w-5"><i class="fa-solid fa-child-reaching"></i></span>
-                        <span>Adik Bintang Saya</span>
                     </li>
                 </RouterLink>
 
                 <RouterLink to="/my-adik/active">
                     <li class="text-white bg-transparent px-4 py-2 rounded hover:bg-dark-blue-2 duration-75 my-4 w-full flex gap-4">
                         <span class="w-5"><i class="fa-solid fa-child-reaching"></i></span>
-                        <span>Adik Bintang Saya (Revisi)</span>
+                        <span>Adik Bintang Saya</span>
                     </li>
                 </RouterLink>
                 

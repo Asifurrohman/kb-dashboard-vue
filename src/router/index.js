@@ -1,11 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
-import HomeView from '../views/HomeView.vue'
-import BerandaView from '../views/beranda/BerandaView.vue'
 
 import LoginView from '../views/login/LoginView.vue'
 
 import OneTimeDonationView from '../views/oneTimeDonation/Index.vue'
-import CommunityFundView from '../views/communityFund/Index.vue'
 
 import AdikBintangSayaView from '../views/adikbintang/Index.vue'
 import TambahAdikBintangView from '@/views/tambahAdikbintang/Index.vue'
@@ -37,8 +34,14 @@ import HalamanDepanPesanView from '../views/pesan/Index.vue'
 import DetailPesanView from '../views/pesan/history/DetailPesanView.vue'
 
 // Revisi
+import BerandaView from '../views/beranda/Index.vue'
+
 import MyAdik from '../views/adikbintangView/MyAdik.vue'
 import MyAdikActive from '../views/adikbintangView/submenu/MyAdikActive.vue'
+
+import IndexCommunityFundView from '../views/communityFund/Index.vue'
+import CommunityFundView from '../views/communityFund/submenu/CommunityFund.vue'
+import CFDonationMeterView from '../views/communityFund/submenu/CFDonationMeter.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -56,16 +59,7 @@ const router = createRouter({
       name: 'beranda',
       component: BerandaView
     },
-    {
-      path: '/one-time-donation',
-      name: 'one time donation',
-      component: OneTimeDonationView
-    },
-    {
-      path: '/community-fund',
-      name: 'community fund',
-      component: CommunityFundView
-    },
+    
     {
       path: '/adik-bintang-saya',
       name: 'adik bintang saya',
@@ -188,7 +182,27 @@ const router = createRouter({
           component: MyAdikActive
         }
       ]
-    }
+    },
+    {
+      path: '/one-time-donation',
+      name: 'one time donation',
+      component: OneTimeDonationView
+    },
+    {
+      path: '/community-fund',
+      name: 'community fund',
+      component: IndexCommunityFundView,
+      children: [
+        {
+          path: 'description',
+          component: CommunityFundView
+        },
+        {
+          path: 'report',
+          component: CFDonationMeterView
+        }
+      ]
+    },
   ],
 })
 
