@@ -31,6 +31,7 @@ import UbahPasswordKakakBintangView from '../views/profileKakakbintang/settings/
 import TulisSuratView from '../views/tulisSuratBintang/Index.vue'
 
 import HalamanDepanPesanView from '../views/pesan/Index.vue'
+import WriteMessageView from '../views/pesan/WriteMessage.vue'
 import DetailPesanView from '../views/pesan/history/DetailPesanView.vue'
 
 // Revisi
