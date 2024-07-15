@@ -23,31 +23,87 @@
                         </div>
                     </div>
                     <div class="w-full flex justify-end">
-                        <button class="bg-soft-green text-white px-5 py-2 rounded hover:bg-emerald-600 mt-5">Pilih Metode Pembayaran</button>
+                        <button type="button"@click="togglePaymentModal(true)" class="bg-soft-green text-white px-5 py-2 rounded hover:bg-emerald-600 mt-5">Pilih Metode Pembayaran</button>
                     </div>
                 </form>
             </div>
         </main>
     </div>
+    
+    <Modal :class="!openPaymentModal ? 'hidden' : '' " class="w-96">
+        <template v-slot:modalHeader>
+            <div class="flex items-center justify-between">
+                <span>
+                    Choose payment method
+                </span>
+                <button @click="togglePaymentModal(false)">
+                    <ion-icon name="close" size="large"></ion-icon>
+                </button>
+            </div>
+            
+        </template>
+        <template v-slot:modalContent>
+            <div class="m-4 border rounded">
+                <div class="bg-slate-200 p-2">
+                    <span class="font-semibold">Instant Payment</span>
+                    <p class="text-sm">Verifikasi otomatis, mudah, dan cepat!</p>
+                </div>
+                <div class="w-[500px]">
+                    <!-- <div class="py-4 px-2 hover:bg-slate-400 hover:text-hz-white focus:bg-slate-700 flex justify-between items-center">
+                        <span>Mandiri Virtual Account</span>
+                        <button class="bg-soft-green px-4 py-2 rounded text-white">
+                            Lanjut
+                        </button>
+                    </div> -->
+                    
+                    <div v-for="bank in namaBank" class="py-4 px-2 border-t border-b hover:bg-slate-400 hover:text-hz-white focus:bg-slate-700 flex justify-between items-center">
+                        <span>{{ bank.nama }}</span>
+                        <button class="bg-soft-green px-4 py-2 rounded text-white" :value="bank.nilai">
+                            Lanjut
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </template>
+    </Modal>
 </template>
 
 <script setup>
-
+import Modal from '../../components/ModalGeneral.vue'
 </script>
 
 <script>
-    export default {
-        data() {
-            return {
-                nominalDonasi: [
-                    {id: 1, nilai: 50000, name: 'limaPuluhRibu'},
-                    {id: 2, nilai: 100000, name: 'seratusRibu'},
-                    {id: 3, nilai: 200000, name: 'duaRatusRibu'},
-                    {id: 4, nilai: 300000, name: 'tigaRatusRibu'},
-                ]
-            }
+export default {
+    data() {
+        return {
+            openPaymentModal: false,
+            showNextButton: false,
+            nominalDonasi: [
+            {id: 1, nilai: 50000, name: 'limaPuluhRibu'},
+            {id: 2, nilai: 100000, name: 'seratusRibu'},
+            {id: 3, nilai: 200000, name: 'duaRatusRibu'},
+            {id: 4, nilai: 300000, name: 'tigaRatusRibu'},
+            ],
+            namaBank: [
+            {id: "mandiri", nama: "Mandiri Virtual Account", nilai: "mandiri"},
+            {id: "bni", nama: "BNI Virtual Account", nilai: "bni"},
+            {id: "bri", nama: "BRI Virtual Account", nilai: "bri"},
+            {id: "bca", nama: "BCA Virtual Account", nilai: "bca"},
+            {id: "permata", nama: "PermataBank VA", nilai: "permata"},
+            {id: "gopay", nama: "GoPay", nilai: "gopay"},
+            ]
+        }
+    },
+
+    methods: {
+        togglePaymentModal(value){
+            this.openPaymentModal = value
+        },
+        toggleNextButton(){
+
         }
     }
+}
 </script>
 
 <style lang="scss" scoped>

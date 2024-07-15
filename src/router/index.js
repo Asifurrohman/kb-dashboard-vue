@@ -204,6 +204,11 @@ const router = createRouter({
         }
       ]
     },
+    {
+      path: '/write-message',
+      name: 'Write Message',
+      component: WriteMessageView
+    },
   ],
 })
 

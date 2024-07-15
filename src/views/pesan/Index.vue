@@ -1,11 +1,11 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
-        <main id="main" class=" mt-20 p-5">
-            <h1 class="text-3xl font-semibold">Pesan</h1>
-            <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
+        <main id="main" class=" mt-28 p-5">
 
             <div class="mb-20 flex gap-4">
-                <button class="bg-soft-green px-5 py-2 rounded text-white hover:bg-emerald-500">Tulis Pesan</button>
+                <RouterLink to="/write-message">
+                    <button class="bg-soft-green px-5 py-2 rounded text-white hover:bg-emerald-500">Tulis Pesan</button>
+                </RouterLink>
                 <a href="https://wa.me/+6285643555530" target="_blank" class="bg-soft-yellow px-5 py-2 rounded text-white hover:bg-yellow-500">Chat Kami</a>
             </div>
             
