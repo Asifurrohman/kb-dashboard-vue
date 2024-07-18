@@ -17,6 +17,7 @@ export default {
 
         'hz-blue': '#56a2d6',
         'hz-white': '#fafafa',
+        'hz-green': '#67AF46',
         'heading-slate-color': '#0f172a',
         'paragraph-slate-color': '#334155'
       },
