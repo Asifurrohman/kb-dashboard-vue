@@ -1,6 +1,8 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
         <main id="main" class=" mt-28 p-5">
+            
+            
             <BerandaLineSeparator>Statistik</BerandaLineSeparator>
             <div class="container m-auto grid grid-cols-2 lg:grid-cols-4 gap-4 py-4">
                 
@@ -87,7 +89,7 @@
                     </template>
                 </CardAdikBintang>
             </div>
-
+            
             <div class="mt-5"></div>
             <BerandaLineSeparator>Adik Bintang Saya</BerandaLineSeparator>
             <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mt-2">
@@ -117,7 +119,7 @@
                         Lihat Detail
                     </template>
                 </CardAdikBintang>
-
+                
                 <CardAdikBintang>
                     <template v-slot:card-image>
                         <img src="../../../../public/img/sakamoto.jpg" alt="" class="h-40 w-full object-cover rounded-t">

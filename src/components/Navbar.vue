@@ -32,7 +32,7 @@
                         <span>Community Fund</span>
                     </li>
                 </RouterLink>
-
+                
                 <RouterLink to="/my-adik/active">
                     <li class="text-white bg-transparent px-4 py-2 rounded hover:bg-dark-blue-2 duration-75 my-4 w-full flex gap-4">
                         <span class="w-5"><i class="fa-solid fa-child-reaching"></i></span>
@@ -87,30 +87,76 @@
                 <img src="../../public/img/logo-hz-blue.svg" alt="" class="h-10 lg:hidden">
             </RouterLink> -->
             <div class="flex flex-row items-center">
-                <div class="mr-10 relative">
-                    <button @click="toggleLanguageBar(false)" class="text-sm bg-slate-200 hover:bg-slate-300 duration-150 px-4 py-2 flex items-center">
-                        <span class="mr-1 hidden lg:block">Language: </span>
-                        <div class="flex items-center">
-                            <span class="font-semibold mr-1 hidden md:block">{{ languages[0].name }}</span>
-                            <img v-bind:src="languages[0].iconFlag" width="30" v-bind:alt="languages[0].name">
-                        </div>
-                        <div class="ml-2">
-                            <i class="fa-solid fa-angle-down"></i>
-                        </div>
-                    </button>
-
-                    <div v-if="showLanguageBar" class="absolute mt-1 w-full">
-                        <ul class="w-full">
-                            <li v-for="lang in languages" v-bind:key="lang" class="w-full">
-                                <a href="#" class="w-full px-4 py-2 bg-hz-blue hover:bg-dark-blue-1 text-hz-white duration-150 flex gap-2">
-                                    <img v-bind:src="lang.iconFlag" width="30" alt="">
-                                    <span class="hidden md:block">{{ lang.name }}</span>
-                                </a>
-                            </li>
-                        </ul>
+                
+                <button id="dropdownMenuIconHorizontalButton" data-dropdown-toggle="dropdownDotsHorizontal" class="inline-flex mr-2 items-center p-2 text-sm font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button"> 
+                    <span class="w-6">
+                        <img src="https://flagcdn.com/id.svg" alt="">
+                    </span>
+                    <span class="ml-2">
+                        <i class="fa-solid fa-caret-down"></i>
+                    </span>
+                </button>
+                
+                <!-- Dropdown menu -->
+                <div id="dropdownDotsHorizontal" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconHorizontalButton">
+                        <li v-for="language in languages">
+                            <a href="#" class="flex gap-2 px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <img :src="language.iconFlag" class="w-6" alt="">
+                                <span>{{ language.name }}</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <img src="../../public/img/acipu.jpeg" class="h-12 w-12 object-cover rounded-full" alt="">
+                </div>
+                <button id="dropdownMenuIconButton" data-dropdown-toggle="profileDropdown" class="inline-flex lg:hidden items-center p-2 text-large font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
+                    <span>
+                        <i class="fa-solid fa-ellipsis-vertical"></i>
+                    </span>
+                </button>
+                
+                <div id="profileDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <div class="w-full flex justify-center">
+                        <img src="../../public/img/acipu.jpeg" class="h-20 w-20 object-cover rounded-full my-4" alt="">
+                    </div>
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconButton">
+                        <li>
+                            <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <span class="mr-2"><i class="fa-solid fa-user"></i></span>
+                                <span>
+                                    Profile Saya
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <button type="button" id="languageButton" data-dropdown-toggle="languageDropdown" data-dropdown-placement="left" class="w-full text-left block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">
+                                <span class="mr-2">
+                                    <i class="fa-solid fa-angle-left"></i>
+                                </span>
+                                <span>
+                                    Bahasa
+                                </span>
+                            </button>
+                            
+                            <div id="languageDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700">
+                                <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownLeftButton">
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bahasa Indonesia</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">English</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="py-2">
+                        <a href="#" class="block px-4 py-2 text-sm text-red-700 hover:bg-red-100 dark:hover:bg-gray-600 dark:text-gray-200 dark:hover:text-white">Logout</a>
                     </div>
                 </div>
-                <img src="../../public/img/acipu.jpeg" class="h-12 w-12 object-cover rounded-full" alt="">
             </div>
         </div>
         <div class="w-full bg-hz-white px-4 py-2">
@@ -165,8 +211,8 @@ export default {
             showMenu: false,
             showLanguageBar: false,
             languages: [
-                {name: 'Bahasa Indonesia', iconFlag: 'https://flagcdn.com/id.svg'},
-                {name: 'English', iconFlag: 'https://flagcdn.com/gb-eng.svg'}
+            {name: 'Bahasa Indonesia', iconFlag: 'https://flagcdn.com/id.svg'},
+            {name: 'English', iconFlag: 'https://flagcdn.com/gb-eng.svg'}
             ]
         }
     },
