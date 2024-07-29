@@ -12,6 +12,7 @@
     "@fortawesome/fontawesome-svg-core": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/vue-fontawesome": "^3.0.6",
+    "axios": "^1.7.2",
     "flag-icon-css": "^4.1.7",
     "flowbite": "^2.4.1",
     "vue": "^3.4.21",

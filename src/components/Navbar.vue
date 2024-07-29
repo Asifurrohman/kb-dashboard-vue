@@ -110,7 +110,9 @@
                 </div>
                 
                 <div>
-                    <img src="../../public/img/acipu.jpeg" class="h-12 w-12 object-cover rounded-full" alt="">
+                    <RouterLink to="/my-profile">
+                        <img src="../../public/img/acipu.jpeg" class="h-12 w-12 object-cover rounded-full" alt="">
+                    </RouterLink>
                 </div>
                 <button id="dropdownMenuIconButton" data-dropdown-toggle="profileDropdown" class="inline-flex lg:hidden items-center p-2 text-large font-medium text-center text-gray-900 rounded-lg hover:bg-gray-100 focus:ring-4 focus:outline-none dark:text-white focus:ring-gray-50 dark:bg-gray-800 dark:hover:bg-gray-700 dark:focus:ring-gray-600" type="button">
                     <span>

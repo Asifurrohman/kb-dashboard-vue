@@ -1,7 +1,48 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
-        <main id="main" class=" mt-20 p-5">
-            <div>
+        <main id="main" class=" mt-28 p-5">
+            <div class="w-full px-5 py-2.5 bg-hz-white rounded">
+                <div class="flex">
+                    <img src="../../../public/img/shanon.jpg" alt="" class="h-40 rounded-full object-cover">
+                    <div class="flex flex-col justify-between ml-5">
+                        <h2 class="text-xl font-semibold mb-2">
+                            Mulyo Hartono
+                        </h2>
+                        <ul class="mb-2">
+                            <li>Akuntan</li>
+                            <li>mulyo@gmail.com</li>
+                            <li>+6285875940894</li>
+                        </ul>
+                        <div>
+                            <button class="focus:outline-none text-white bg-yellow-400 hover:bg-yellow-500 focus:ring-4 focus:ring-yellow-300 font-medium rounded text-sm px-5 py-2.5 me-2 mb-2">Update Foto</button>
+                            <button class="text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded text-sm px-5 py-2.5 me-2 mb-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">Update Password</button>
+                        </div>
+                    </div>
+                    <div class="border mx-10">
+                    </div>
+                    <div class="flex">
+                        <div class="">
+                            <ul class="">
+                                <li>Tanggal Terdaftar:</li>
+                                <li>Tempat, Tanggal Lahir:</li>
+                                <li>Jenis Kelamin:</li>
+                                <li>Pendidikan:</li>
+                                <li>Detail Pendidikan:</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>2 Juli 2019</li>
+                                <li>Madiun, 20 Juni 1989</li>
+                                <li>Laki-Laki</li>
+                                <li>S1</li>
+                                <li>S1 Akuntansi</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div>
                 <h1 class="text-3xl font-semibold">Profile Saya</h1>
                 <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
                 <div class="flex w-full">
@@ -172,6 +213,11 @@
                         
                     </div>
                 </div>
+            </div> -->
+            
+            <div>
+                <h1>Data</h1>
+                <pre>{{ data }}</pre>
             </div>
         </main>
     </div>
@@ -179,6 +225,39 @@
 
 <script setup>
 
+</script>
+
+<script>
+import axios from 'axios';
+
+export default {
+    data() {
+        return {
+            data: null,
+            error: null
+        };
+    },
+    mounted() {
+        this.fetchData();
+    },
+    methods: {
+        async fetchData() {
+            try {
+                // const response = await axios.post('https://web.hoshizora.org/kakakbintang/my-adik/get/', 'type=active&offset=0', {
+                const response = await axios.post('https://web.hoshizora.org/kakakbintang/my-adik/get/', 'type=active&offset=0', {
+                    headers: {
+                        'Content-Type': 'text/plain',
+                        'Cookie': 'hz_session=bb17fe3505bfe38b80812df7040b4b5f4f1a5834'
+                    }
+                });
+                this.data = response.data;
+            } catch (err) {
+                this.error = err;
+                console.error(err);
+            }
+        }
+    }
+};
 </script>
 
 <style lang="scss" scoped>

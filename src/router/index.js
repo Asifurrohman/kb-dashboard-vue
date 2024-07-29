@@ -141,11 +141,11 @@ const router = createRouter({
       name: 'konfirmasi transfer donasi',
       component: KonfirmasiTransferDonasiView
     },
-    {
-      path: '/profile-kakak-bintang',
-      name: 'profile kakak bintang',
-      component: ProfileKakakBintangView
-    },
+    // {
+    //   path: '/my-profile',
+    //   name: 'Profile',
+    //   component: ProfileKakakBintangView
+    // },
     {
       path: '/profile-kakak-bintang/update-profile',
       name: 'update profile kakak bintang',
@@ -183,6 +183,11 @@ const router = createRouter({
           component: MyAdikActive
         }
       ]
+    },
+    {
+      path: '/my-profile',
+      name: 'Profile',
+      component: ProfileKakakBintangView
     },
     {
       path: '/one-time-donation',
