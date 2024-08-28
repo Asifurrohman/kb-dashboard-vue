@@ -1,6 +1,7 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
         <main id="main" class="mt-28 p-5">
+            <BerandaLineSeparator>One Time Donation</BerandaLineSeparator>
             <p class="text-gray-600 mb-2 leading-7 ">
                 <span class="font-semibold text-2xl">One Time Donation</span> merupakan salah satu program donasi Hoshizora di mana Anda dapat bergabung kapan saja dan di mana saja dengan memberikan kontribusi finansial berapapun.
             </p>
@@ -15,7 +16,7 @@
                 <form action="" class="">
                     <div class="grid gap-4 grid-cols sm:grid-cols-2 md:grid-cols-4">
                         <div v-for="nominal in nominalDonasi" :key="nominal.id">
-                            <input type="radio" :value="nominal.nilai" v-bind:id="nominal.name" name="nominal_one_time_donation">
+                            <input type="radio" class="hidden" :value="nominal.nilai" v-bind:id="nominal.name" name="nominal_one_time_donation">
                             <label v-bind:for="nominal.name" class="border border-hz-blue rounded text-hz-blue p-5 flex flex-col cursor-pointer">
                                 <span>Rp</span>
                                 <span class="text-3xl font-bold">{{ nominal.nilai }}</span>
@@ -23,7 +24,7 @@
                         </div>
                     </div>
                     <div class="w-full flex justify-end">
-                        <button type="button"@click="togglePaymentModal(true)" class="bg-soft-green text-white px-5 py-2 rounded hover:bg-emerald-600 mt-5">Pilih Metode Pembayaran</button>
+                        <button type="button" @click="togglePaymentModal(true)" class="bg-soft-green text-white px-5 py-2 rounded hover:bg-emerald-600 mt-5">Pilih Metode Pembayaran</button>
                     </div>
                 </form>
             </div>
@@ -56,7 +57,7 @@
                         </button>
                     </div> -->
                     
-                    <div v-for="bank in namaBank" class="py-4 px-2 border-t border-b hover:bg-slate-400 hover:text-hz-white focus:bg-slate-700 flex justify-between items-center">
+                    <div v-for="bank in namaBank" v-bind:key="bank.id" class="py-4 px-2 border-t border-b hover:bg-slate-400 hover:text-hz-white focus:bg-slate-700 flex justify-between items-center">
                         <span>{{ bank.nama }}</span>
                         <button class="bg-soft-green px-4 py-2 rounded text-white" :value="bank.nilai">
                             Lanjut
@@ -70,6 +71,7 @@
 
 <script setup>
 import Modal from '../../components/ModalGeneral.vue'
+import BerandaLineSeparator from '@/components/BerandaLineSeparator.vue';
 </script>
 
 <script>

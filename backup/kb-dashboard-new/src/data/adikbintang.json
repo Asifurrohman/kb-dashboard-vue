@@ -1,0 +1,31 @@
+{
+    "adikbintang": [
+        {
+            "id": 1,
+            "nama": "Sitompul Hutabarat",
+            "tanggal_lahir": "02-18-2005",
+            "tempat_lahir": "Bengkulu",
+            "kelas": 8,
+            "jenjang": "SMP",
+            "cita_cita": "Cita-cita saya ingin menjadi tentara karena tugas tentara untuk membela negara Indonesia"
+        },
+        {
+            "id": 2,
+            "nama": "Delny",
+            "tanggal_lahir": "02-18-2005",
+            "tempat_lahir": "Maluku Utara",
+            "kelas": 5,
+            "jenjang": "SD",
+            "cita_cita": "Cita-cita saya ingin menjadi pilot VKS"
+        },
+        {
+            "id": 3,
+            "nama": "Udaloi",
+            "tanggal_lahir": "02-18-2005",
+            "tempat_lahir": "Maluku Utara",
+            "kelas": 5,
+            "jenjang": "SD",
+            "cita_cita": "Cita-cita saya ingin menjadi pilot VKS"
+        }
+    ]
+}

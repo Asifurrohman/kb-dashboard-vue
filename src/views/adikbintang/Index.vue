@@ -1,8 +1,7 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
-        <main id="main" class=" mt-20 p-5">
-            <h1 class="text-3xl font-semibold">Adik Bintang Saya</h1>
-            <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
+        <main id="main" class=" mt-28 p-5">
+            <BerandaLineSeparator>Tambah Adik Bintang</BerandaLineSeparator>
             <div class="bg-white p-5 mb-5 rounded-lg">
                 <p class="mb-3">Kakak bisa klik tombol di bawah ini jika ingin menambah adik bintang</p>
                 <RouterLink to="/tambah-adik-bintang" class="bg-soft-green hover:bg-emerald-500 text-white py-2 px-5 rounded">
@@ -39,7 +38,7 @@
 </template>
 
 <script setup>
-
+import BerandaLineSeparator from '@/components/BerandaLineSeparator.vue';
 </script>
 
 <style lang="scss" scoped>

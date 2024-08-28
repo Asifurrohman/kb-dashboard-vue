@@ -100,7 +100,7 @@
                 <!-- Dropdown menu -->
                 <div id="dropdownDotsHorizontal" class="z-10 hidden bg-white divide-y divide-gray-100 rounded shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
                     <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownMenuIconHorizontalButton">
-                        <li v-for="language in languages">
+                        <li v-for="language in languages" v-bind:key="language.id">
                             <a href="#" class="flex gap-2 px-4 py-2 hover:bg-blue-100 dark:hover:bg-gray-600 dark:hover:text-white">
                                 <img :src="language.iconFlag" class="w-6" alt="">
                                 <span>{{ language.name }}</span>
@@ -213,8 +213,8 @@ export default {
             showMenu: false,
             showLanguageBar: false,
             languages: [
-            {name: 'Bahasa Indonesia', iconFlag: 'https://flagcdn.com/id.svg'},
-            {name: 'English', iconFlag: 'https://flagcdn.com/gb-eng.svg'}
+            {id: 1, name: 'Bahasa Indonesia', iconFlag: 'https://flagcdn.com/id.svg'},
+            {id: 2, name: 'English', iconFlag: 'https://flagcdn.com/gb-eng.svg'}
             ]
         }
     },

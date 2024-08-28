@@ -1,9 +1,8 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
-        <main id="main" class=" mt-20 p-5">
+        <main id="main" class=" mt-28 p-5">
+            <BerandaLineSeparator>Konfirmasi Transfer Donasi</BerandaLineSeparator>
             <div>
-                <h1 class="text-3xl font-semibold">Konfirmasi Transfer Donasi</h1>
-                <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
                 <p class="text-gray-600 text-base mt-2 sm:w-4/5 mb-10 leading-7">
                     Semua pembayaran yang anda lakukan akan tampil pada halaman dibawah ini. Apabila anda mengalami kesulitan dalam mengkonfirmasi pembayaran, silakan hubungi kami.
                 </p>
@@ -59,7 +58,7 @@
 </template>
 
 <script setup>
-
+import BerandaLineSeparator from '@/components/BerandaLineSeparator.vue';
 </script>
 
 <style lang="scss" scoped>

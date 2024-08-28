@@ -1,9 +1,9 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
-        <main id="main" class=" mt-20 p-5">
+        <main id="main" class=" mt-28 p-5">
+            <BerandaLineSeparator>Tulis Surat Bintang</BerandaLineSeparator>
+
             <div>
-                <h1 class="text-3xl font-semibold">Tulis Surat Bintang (Progress Report)</h1>
-                <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
                 <p class="mb-2">Pilih adik bintang</p>
                 
                 <div class="w-full overflow-x-auto bg-white mb-10">
@@ -69,7 +69,7 @@
 </template>
 
 <script setup>
-
+import BerandaLineSeparator from '@/components/BerandaLineSeparator.vue';
 </script>
 
 <style lang="scss" scoped>

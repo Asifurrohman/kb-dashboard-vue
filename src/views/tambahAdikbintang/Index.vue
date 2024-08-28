@@ -1,9 +1,8 @@
 <template>
     <div class="w-full lg:w-4/5 absolute right-0 ">
-        <main id="main" class=" mt-20 p-5">
+        <main id="main" class=" mt-28 p-5">
+            <BerandaLineSeparator>Tambah Adik Bintang</BerandaLineSeparator>
             <div>
-                <h1 class="text-3xl font-semibold">Tambah Adik Bintang</h1>
-                <hr class="w-full mt-1 mb-4 bg-gray-200 h-1 rounded">
                 
                 <!-- <div class="bg-white py-2 px-5 mb-5 rounded-lg text-sm flex">
                     <RouterLink to="/tambah-adik-bintang" activeClass="bg-soft-blue hover:bg-blue-600 text-white hover:text-white py-2 px-5 rounded mr-2" class="hover:text-blue-600 py-2 px-5 rounded mr-2">
@@ -115,6 +114,7 @@
 
 <script setup>
 import TambahAdikBintangMenu from '../../components/TambahAdikBintangMenu.vue'
+import BerandaLineSeparator from '@/components/BerandaLineSeparator.vue';
 </script>
 
 <style lang="scss" scoped>
